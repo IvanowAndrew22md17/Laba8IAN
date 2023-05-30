@@ -1,5 +1,5 @@
 from PIL import Image, ImageDraw, ImageFont
-x = input("введите номер задания:")
+x = int(input("введите номер задания:"))
 
 #8.1
 def f1():
@@ -29,8 +29,8 @@ def f3():
     n = input('Кого поздравить?')
     s = 'Happy birthday, ' + n + "!<3"
     d = ImageDraw.Draw(img)
-    f = ImageFont.truetype('/Users/Запасной/Desktop/прога/Laba8IAN/ofont.ru_Maki Sans', size=30)
-    d.text((100, 100), s, (0, 255, 255), font=f)
+    f = ImageFont.truetype('C:/Users/Запасной/Desktop/прога/Laba8IAN/ofont.ru_Maki Sans.ttf', size=30)
+    d.text((100, 1140), s, (0, 255, 255), font=f)
     img.save('r.png')
 if x==3:
     f3()
